@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ModalController } from 'ionic-angular';
+import { NavController, ModalController, ViewController } from 'ionic-angular';
 import { StartScreenPage } from '../startscreen/startscreen';
 import {TabsPage} from '../tabs/tabs';
 
@@ -9,7 +9,7 @@ import {TabsPage} from '../tabs/tabs';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public viewCtrl: ViewController) {
 
   }
   backtostart() {
@@ -18,6 +18,7 @@ export class LoginPage {
   }
 
   openTab() {
+    this.viewCtrl.dismiss();
     this.navCtrl.push(TabsPage);
   }
 }

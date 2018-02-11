@@ -2,6 +2,17 @@
 
   ion-card {
     position: relative;
+  }
+
+  .cancel{
+    color: black !important;
+  }
+
+  .logout {
+    justify-content: flex-end !important;
+  }
+
+  .card-text {
     text-align: center;
   }
 

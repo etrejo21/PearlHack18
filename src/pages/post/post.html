@@ -1,11 +1,26 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      New Post
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-slides pager>
 
+    <ion-slide>
+      <ion-item class="inputs" text-wrap>
+        <ion-textarea type="text" value="" placeholder="Type post here..." readonly=false class="post-area"></ion-textarea>
+      </ion-item>
+    </ion-slide>
+
+    <ion-slide>
+      <h2>Poll</h2>
+    </ion-slide>
+
+    <div class="btn-container">
+        <button ion-button round>Submit</button>
+    </div>
+  </ion-slides>
 </ion-content>

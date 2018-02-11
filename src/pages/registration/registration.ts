@@ -18,6 +18,7 @@ export class RegistrationPage {
   }
 
   openTab() {
+    this.viewCtrl.dismiss();
     this.navCtrl.push(TabsPage);
   }
 

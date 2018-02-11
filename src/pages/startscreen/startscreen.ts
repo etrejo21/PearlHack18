@@ -9,9 +9,8 @@ import { LoginPage } from '../login/login';
   templateUrl: 'startscreen.html'
 })
 export class StartScreenPage {
-
+  // boolean showBack: False;
   constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
-
   }
   login() {
     let modal = this.modalCtrl.create(LoginPage);

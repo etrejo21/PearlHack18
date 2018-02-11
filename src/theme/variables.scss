@@ -55,6 +55,9 @@ $colors: (
   align-items: flex-start;
   width: 100%;
 }
+ion-navbar {
+  height: 5rem !important;
+}
 
 // App iOS Variables
 // --------------------------------------------------
