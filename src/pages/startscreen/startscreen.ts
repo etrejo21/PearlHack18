@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'startscreen-about',
+  selector: 'page-startscreen',
   templateUrl: 'startscreen.html'
 })
 export class StartScreenPage {
