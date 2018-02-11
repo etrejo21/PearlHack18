@@ -4,7 +4,11 @@ page-post {
   }
 
   .text-input {
-    height: 45rem;
+    height: 35rem;
+  }
+
+  .swipe {
+    height: 40rem;
   }
 
   .slide-zoom{
@@ -13,5 +17,9 @@ page-post {
 
   .scroll-content {
     padding-bottom: 0 !important;
+  }
+
+  .submit {
+    margin-top: 2rem;
   }
 }
