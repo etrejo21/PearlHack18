@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, ViewController } from 'ionic-angular';
 
+import {TabsPage} from '../tabs/tabs';
+
 @Component({
   selector: 'page-registration',
   templateUrl: 'registration.html'
@@ -13,6 +15,10 @@ export class RegistrationPage {
 
   closeRegistration() {
       this.viewCtrl.dismiss();
+  }
+
+  openTab() {
+    this.navCtrl.push(TabsPage);
   }
 
 }
