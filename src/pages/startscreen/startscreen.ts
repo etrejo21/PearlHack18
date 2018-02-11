@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController} from 'ionic-angular';
+
+import { RegistrationPage } from '../registration/registration';
 
 @Component({
   selector: 'page-startscreen',
@@ -7,8 +9,13 @@ import { NavController } from 'ionic-angular';
 })
 export class StartScreenPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
 
+  }
+
+  register() {
+    let modal = this.modalCtrl.create(RegistrationPage);
+    modal.present();
   }
 
 }
