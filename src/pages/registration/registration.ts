@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ViewController } from 'ionic-angular';
 
 @Component({
   selector: 'page-registration',
@@ -7,8 +7,12 @@ import { NavController } from 'ionic-angular';
 })
 export class RegistrationPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public viewCtrl: ViewController) {
 
+  }
+
+  closeRegistration() {
+      this.viewCtrl.dismiss();
   }
 
 }
