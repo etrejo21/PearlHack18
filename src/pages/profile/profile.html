@@ -1,17 +1,110 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <div class="btn-container back-container">
+          <ion-title>Profile</ion-title>
+          <button ion-button clear right class="logout" (click)="gotoStart()">Log Out</button>
+        </div>
+    </ion-navbar>
 </ion-header>
-
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content class="card-background-page" padding>
+  <ion-card>
+    <ion-card>
+      <img src="../assets/imgs/profilebackground.jpg"/>
+      <div class="card-title">traveler123</div>
+      <div class="card-subtitle">Cancer survivor, living life to the fullest.</div>
+    </ion-card>
+    <ion-title>
+      This is my story...
+    </ion-title>
+    <div left>
+      <p left>
+        I am scared. I am overcoming. I am brave. I am a fighter. I am a survivor.
+      </p>
+      <p icon-left>
+        Soon to be 3 years cancer free, I am a free spirited world traveler that finally found an appreciation for earth and life. Take opportunities because one day you might not have the chance to. If not now, then when?
+      </p>
+      <ion-note center>
+        #yolo #wanderlust #notallwhowanderarelost
+      </ion-note>
+    </div>
+  </ion-card>
+  <ion-title left>
+    Past Posts
+  </ion-title>
+  <ion-card>
+    <ion-card-content left>
+      Next month marks 3 years cancer free!!! Where should I go this time?
+      <ion-label><ion-checkbox color="light" checked="false"></ion-checkbox> Greece </ion-label>
+      <ion-label><ion-checkbox color="light" checked="false"></ion-checkbox> Thailand </ion-label>
+      <ion-label><ion-checkbox color="light" checked="false"></ion-checkbox> Ireland </ion-label>
+      <ion-label><ion-checkbox color="light" checked="false"></ion-checkbox> Mexico </ion-label>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>36 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>5 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <p>Always look up and keep fighting.</p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>51 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>9 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          2w ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      Constantly fearing that my cancer will come back, but what can I do except to keep looking forward?
+    </ion-card-content>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>35 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>3 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          6w ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
 </ion-content>

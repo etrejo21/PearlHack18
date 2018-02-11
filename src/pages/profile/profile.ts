@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
+import { StartScreenPage } from '../startscreen/startscreen';
 
 @Component({
   selector: 'page-profile',
@@ -9,6 +10,9 @@ export class ProfilePage {
 
   constructor(public navCtrl: NavController) {
 
+  }
+  gotoStart() {
+    this.navCtrl.push(StartScreenPage);
   }
 
 }
